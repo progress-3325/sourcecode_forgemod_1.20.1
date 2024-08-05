@@ -15,10 +15,10 @@ public class ModCreativeModTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BleachersMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> ZANPAKUTO_WEAPONS = CREATIVE_MODE_TABS.register("zanpakuto_weapons",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZANPAKUTO.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZANPAKUTO_SEALED.get()))
                     .title(Component.translatable("creativetab.zanpakuto_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.ZANPAKUTO.get());
+                        output.accept(ModItems.ZANPAKUTO_SEALED.get());
                         output.accept(Items.NETHERITE_SWORD);
                     })
                     .build());

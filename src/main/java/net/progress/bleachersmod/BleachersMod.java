@@ -55,7 +55,7 @@ public class BleachersMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.ZANPAKUTO);
+            event.accept(ModItems.ZANPAKUTO_SEALED);
         }
     }
 
