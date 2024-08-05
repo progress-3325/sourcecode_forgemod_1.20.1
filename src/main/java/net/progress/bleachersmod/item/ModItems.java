@@ -11,7 +11,7 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, BleachersMod.MOD_ID);
 
-    public static final RegistryObject<Item> ZANPAKUTO = ITEMS.register("Zanpakuto",
+    public static final RegistryObject<Item> ZANPAKUTO_SEALED = ITEMS.register("zanpakuto_sealed",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
